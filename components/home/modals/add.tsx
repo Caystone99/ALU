@@ -46,7 +46,7 @@ const Add=({setModal}: {setModal:any})=>{
             <div className="animate__animated animate__bounceIn bg-white p-4 w-[80%] flex flex-col space-y-4 rounded-lg md:p-10 md:w-[500px] md:space-y-6 md:rounded-2xl">
                 <div className="flex flex-row justify-between items-center">
                     <h4 className="font-bold text-lg ">Add New Profile</h4>  
-                    <button onClick={()=>{setModal(null)}}>&#x1F5D9;</button>
+                    <button onClick={()=>{setModal(null)}}>&#x2716; close</button>
                 </div>
                 <hr/> 
 
