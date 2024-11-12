@@ -1,0 +1,17 @@
+[
+    {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "role": "Admin",
+      "status": "Active",
+      "avatar": "/images/john.webp"
+    },
+    {
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "role": "User",
+      "status": "Inactive",
+      "avatar": "/images/jane.webp"
+    }
+  ]
+  

@@ -1,8 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alumunite User Management Dashboard
 
-## Getting Started
+This is a frontend engineering assessment project for Alumunite. The application is a user management dashboard built with Next.js, showcasing a simple interface for displaying, adding, updating, and deleting user profiles. It uses Zustand for state management and mock JSON data for initial user profiles.
 
-First, run the development server:
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Setup Instructions](#setup-instructions)
+
+
+## Project Overview
+
+The dashboard allows users to:
+- View a list of user profiles
+- Add new users
+- Update existing users
+- Delete users
+
+## Features
+
+1. **User Interface**:
+   - A landing page that lists user profiles, displaying the following fields:
+     - Name
+     - Email
+     - Role (Admin, User, or Guest)
+     - Status (Active/Inactive)
+     - Profile photo
+   - A navigation bar with links to "Home," "Add User," and "Manage Users".
+   - Responsive design for desktop and mobile.
+
+2. **User Interaction**:
+   - Form for adding a new user with fields for name, email, role, status (toggle for Active/Inactive), and profile photo upload.
+   - Form validation for email format and required fields.
+   - Editable fields for updating user details.
+
+3. **Data Management**:
+   - Initial data populated from a JSON file (`/public/mockProfiles.json`) simulating user profile data.
+   - Zustand for local state management.
+   - State persistence across sessions using `zustand/middleware` with local storage.
+
+4. **Styling**:
+   - Consistent design theme achieved with Tailwind CSS.
+   - Responsive layouts to ensure usability on various screen sizes.
+
+5. **Code Quality**:
+   - Modular code structure with reusable components.
+   - TypeScript for type safety.
+   - Well-documented components and functions.
+
+## Setup Instructions
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/alu.git
+   cd alu
+
+2. **Run the development server**:
 
 ```bash
 npm run dev
@@ -20,17 +74,3 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
